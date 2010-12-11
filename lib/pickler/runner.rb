@@ -158,6 +158,12 @@ class Pickler
           puts "  #{colorize('01', note.author)} (#{note.date})"
           puts(*note.lines(72).map {|l| "    #{l}".rstrip})
         end
+        story.tasks.each do |task|
+          # puts
+          #          puts "  #{colorize('01', note.author)} (#{note.date})"
+          #          puts(*note.lines(72).map {|l| "    #{l}".rstrip})
+        end
+        
       end
 
       def paginated_output
